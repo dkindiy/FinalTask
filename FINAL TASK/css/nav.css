@@ -1,0 +1,127 @@
+nav {
+    width: 414px;
+}
+@media screen and (min-width: 414px) {
+    nav {
+        width: auto;
+    }
+}
+.menu-logo {
+    padding: 1em;
+    display: inline;
+    border: none;
+    background-color: black;
+    font-size: 14px;
+    cursor: pointer;
+}
+.menu-logo:hover {
+    background-color: #303030;
+}
+.menu-logo a {
+    color: white;
+}
+.menu-content {
+    position: relative;
+    padding: 3vw 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+@media screen and (min-width: 1024px) {
+    .menu-content {
+        border-bottom: 1px solid #e5e5e5;
+    }
+}
+.content-50 {
+    display: flex;
+    align-items: center;
+}
+.menu-items {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+}
+@media screen and (min-width: 1024px) {
+    .menu-items {
+        position: static;
+        padding: 0 3vw;
+    }
+}
+.menu-items ul {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+@media screen and (min-width: 1024px) {
+    .menu-items ul {
+        border-top: none;
+        border-bottom: none;
+    }
+}
+.menu-item {
+    padding: 1em;
+    margin: 0.5em;
+    display: block;
+    font-size: 14px;
+    line-height: 1;
+    text-align: center;
+}
+.menu-item:hover {
+	text-decoration: underline;
+}
+@media screen and (min-width: 1024px) {
+    .menu-item {
+        margin: 0 0.5em;
+        display: inline-block;
+    }
+}
+div.menu-buttons {
+    display: flex;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+}
+div.menu-buttons > div {
+    margin-left: 2vw;
+}
+#search-input {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin: 0;
+    padding: 14px;
+    width: 95%;
+    height: 46px;
+    border: 1px solid #a3a3a3;
+    display: none;
+}
+@media screen and (min-width: 768px) {
+    #search-input {
+        position: relative;
+        left: 5px;
+        margin: 0;
+        width: 185px;
+    }
+}
+#search-input:hover {
+    border: 1px solid #606060;
+}
+#search-icon-div button {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.menu-basket {
+    display: flex;
+    align-items: center;
+}
+.menu-basket img {
+    vertical-align: sub;
+}

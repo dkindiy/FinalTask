@@ -1,0 +1,118 @@
+.cart {
+    padding: 2em;
+}
+.cart > a button {
+    padding: 1em;
+    width: 100%;
+}
+@media screen and (min-width: 768px) {
+    .cart > a button {
+        width: 300px;
+        margin: auto;
+        display: block;
+    }
+}
+.cart > a p {
+    text-decoration: underline;
+}
+.cart-item {
+    padding: 1em 0;
+    border-top: 1px solid #e5e5e5;
+}
+.cart-item p {
+    margin: 0;
+    text-align: right;
+}
+.cart-item-content {
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+.cart-item-content > span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 0.5;
+    transition: 0.2s ease-out;
+    cursor: pointer;
+}
+.cart-item-content span:hover {
+    color: #606060;
+}
+.cart-item-image {
+    display: inline-block;
+    width: 18%;
+    padding-top: 18%;
+    position: relative;
+    overflow: hidden;
+}
+.cart-item-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cart-item-info {
+    display: flex;
+    flex-flow: column wrap;
+    width: 50%;
+}
+.cart-item-info h4,
+.cart-item-info p {
+    margin: 0;
+    padding: 0 5%;
+    text-align: left;
+}
+.qty {
+    position: relative;
+    display: inherit;
+}
+.cart-item-info input {
+    margin-left: 5%;
+    width: 32px;
+    border: none;
+    font-size: 14px;
+    font-style: normal;
+    cursor: default;
+}
+.cart-item-info input:hover {
+    border: none;
+}
+.cart-item-info input:focus {
+    border: none;
+    font-size: 14px;
+    font-style: normal;
+}
+.subtotal {
+    padding: 1em;
+    margin-bottom: 2em;
+    background-color: #f9f9f9;
+    border-top: 1px solid #e5e5e5;
+}
+.subtotal p {
+    margin: 0;
+    text-align: right;
+    font-weight: bold;
+}
+.subtotal span {
+    color: #f68236;
+}
+.input-arrows {
+    display: inline-flex;
+    flex-direction: column;
+}
+.input-arrows button {
+    padding: 0 2px;
+    cursor: pointer;
+    line-height: 1;
+    font-size: 12px;
+    user-select: none;
+    -moz-user-select: none;
+}
+.input-arrows button:hover {
+    background-color: #a3a3a3;
+}
