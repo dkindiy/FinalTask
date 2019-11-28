@@ -1,0 +1,14 @@
+<mat-card class="mat-card">
+    <header class="justify-content-between">
+        <mat-card-title class="card-title"> Todo List </mat-card-title>
+        <button mat-button routerLink="/admin">Admin</button>
+    </header>
+
+    <main class="card-main">
+        <div *ngFor="let todoItem of todoItems" class="card-checkbox">
+            <mat-checkbox [(ngModel)]="todoItem.done">{{ todoItem.text }}</mat-checkbox>
+        </div>
+    </main>
+
+    <mat-card-subtitle> {{ todoItems.length }} items </mat-card-subtitle>
+</mat-card>

@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/purple-green.css';
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+input { padding: 4px 8px; }
+
+.mat-card {
+    margin: 1em;
+    padding: 2em;
+}
+.justify-content-between {
+    display: flex;
+    justify-content: space-between;
+}
+.card-title {
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+.card-main {
+    padding: 2em 0;
+}
+.card-checkbox {
+    margin: 1em 0;
+}
+.card-footer {
+    margin-top: 1em;
+}
+.form > * {
+    width: 100%;
+}

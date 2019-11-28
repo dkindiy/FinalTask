@@ -1,0 +1,17 @@
+<mat-card>
+    <mat-card-title>Login</mat-card-title>
+    <mat-error *ngIf="errorMessage">{{ errorMessage }}</mat-error>
+
+    <form novalidate #form="ngForm" (ngSubmit)="authenticate(form)" class="form">
+        <mat-form-field>
+            <input matInput name="username" [(ngModel)]="username" placeholder="Name" required />
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput type="password" name="password" [(ngModel)]="password" placeholder="Password" required />
+        </mat-form-field>
+        <div>
+            <button mat-button routerLink="/">Go back</button>
+            <button mat-button type="submit">Log In</button>
+        </div>
+    </form>
+</mat-card>

@@ -1,0 +1,29 @@
+<div>
+    <router-outlet></router-outlet>
+</div>
+
+<mat-card class="mat-card">
+    <header class="justify-content-between">
+        <mat-card-title class="card-title"> Todo List </mat-card-title>
+        <button mat-button (click)="logout()">Logout</button>
+    </header>
+
+    <main class="card-main">
+        <div *ngFor="let todoItem of getTodoItems()" class="card-checkbox justify-content-between">
+            <mat-checkbox [(ngModel)]="todoItem.done">{{ todoItem.text }}</mat-checkbox>
+            <div>
+                <button mat-button (click)="openDialog(todoItem.id, todoItem.text)"> Edit </button>
+                <button mat-button (click)="deleteTodoItem(todoItem.id)"> Delete </button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="justify-content-between">
+        <mat-card-content class="card-footer">
+            {{ getTodoItems().length }} items
+        </mat-card-content>
+        <button mat-raised-button (click)="openDialog()">
+            Create New Product
+        </button>
+    </footer>
+</mat-card>

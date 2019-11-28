@@ -1,0 +1,29 @@
+{
+  "todoItems": [
+    {
+      "id": 1,
+      "text": "Buy potatoes",
+      "done": false
+    },
+    {
+      "id": 2,
+      "text": "Read a newspaper",
+      "done": false
+    },
+    {
+      "id": 4,
+      "text": "Say Hello",
+      "done": true
+    },
+    {
+      "id": 5,
+      "text": "Complete the task",
+      "done": false
+    },
+    {
+      "text": "Calculate smth",
+      "done": false,
+      "id": 6
+    }
+  ]
+}
